@@ -1,0 +1,225 @@
+* {
+    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(240, 239, 238);
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Start Header */
+
+.header {
+    height: 800px;
+    background-image: url("../css/images/coffeehouse.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.home, .about, .menu, .where {
+    padding: 10px 213px 10px 213px;
+}
+
+.home:hover, .about:hover, .menu:hover, .where:hover {
+    background-color: silver;
+    color: black;
+}
+
+.name {
+    position: absolute;
+    bottom: 40%;
+    left: 45%;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+.time {
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+
+.address {
+    position: absolute;
+    bottom: 15%;
+    left: 91%;
+    color: white;
+}
+
+/* End Header */
+
+/* Start About */
+
+.about-sec {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+h2 span {
+    background-color: #000;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+.about-sec p {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.quote {
+    background-color: #f1f1f1;
+    height: 130px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+img {
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* End About */
+
+
+/* Start menu */
+
+/* End menu */
+
+/* Start Where */
+
+.where-sec {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.where-sec p {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.fyi {
+    background-color: black;
+    color: white;
+    padding: 2px 10px;
+}
+
+.username, .number, .date, .message {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 8px;
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.save {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.save:hover {
+    background-color: silver;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* End Where */
+
+/* Start Menu */
+
+
+
+/* End Menu */
+
+/* Start Foot */
+
+.foot {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ebe9e9;
+}
+
+/* End Foot */
+
+
+
+@media (max-width:767px){
+    header,.home,section{
+        min-width: 570px; 
+        overflow-x: hidden;
+    }
+    .section__description{
+        max-width: 500px;
+    }
+    .menu__kind{
+        justify-content: space-between;
+    }
+
+    .menu img{
+        max-width: 490px;
+    }
+    
+    
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .section__description{
+        max-width: 620px;
+    }
+    .menu img{
+        max-width: 600px;
+    }
+}
