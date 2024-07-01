@@ -21,61 +21,69 @@ ul {
 
 /* Start Header */
 
-.header {
-    height: 800px;
-    position: relative;
-    background-image: url("../css/images/coffeehouse.jpg");
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 50px;
-}
-
-nav {
-    background-color: black;
-    top: 0;
-    position: fixed;
-    padding: 10px;
-}
-
-.links a {
-    width: 24%;
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.home, .about, .menu, .where {
-    padding: 10px 213px 10px 213px;
-}
-
-.home:hover, .about:hover, .menu:hover, .where:hover {
-    background-color: silver;
-    color: black;
-}
-
-.name {
-    position: absolute;
-    bottom: 40%;
-    left: 45%;
-    font-size: 80px;
-    font-weight: bold;
-    color: white;
-}
-
-.time {
-    position: absolute;
-    bottom: 10%;
-    left: 2%;
-    background-color: black;
-    color: white;
-    padding: 7px;
-}
-
-.address {
-    position: absolute;
-    bottom: 10%;
-    left: 91%;
-    color: white;
+header {
+    
+    .nav-bar {
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex: auto;
+        font-size: 11px;
+        justify-content: space-around;
+        padding: 7px 9px;
+        
+        a {
+            padding: 13px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            
+            &:hover {
+                background-color: #bbbbbb;
+                color: black;
+            }
+        }
+    }
+    .home {
+        background-image: url(/images/coffeehouse.jpg);
+        background-size: cover;
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        color: white;
+        h1 {
+           padding-bottom: 180px;
+           font-size: 70px; 
+           font-weight: 100;
+        }
+        .desc {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            word-spacing: 4px;
+            p {
+                color: white;
+                margin: 0 5px ;
+                font-size: 11px;
+            }
+            .p1 {
+                background-color: black;
+                padding: 4px;
+                font-size: 12px;
+                margin-bottom: 4px;
+                
+            }
+        }
+    }
 }
 
 /* End Header */
