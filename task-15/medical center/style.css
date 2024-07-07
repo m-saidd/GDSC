@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(16, 16, 250);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+
+}
+
+/* Start Header */
+
+
+
+.nav-bar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.links {
+    width: 40%;
+    display: flex;
+    gap: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    font-size: 18px;
+}
+
+.number {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+.home {
+    background-image: url("./css/img/h1_hero.png.webp");
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.commit {
+    font-size: 20px;
+    color: var(--main-color)
+}
+
+h1 {
+    font-size: 60px;
+    color: black;
+    padding-bottom: ;
+}
+
+.lorem {
+    font-size: 20px;
+    color: grey;
+    line-height: 2rem;
+}
+
+.button {
+    background-color: var(--main-color);
+}
+
+/* End Header */
+
+/* Start About */
+
+.about-sec {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.about {
+    color: var(--main-color);
+}
+
+h2 {
+    font-size: 60px;
+}
+
+.button {
+    width: 30%;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 1rem;
+    border: none;
+}
+
+.about-appoint-one{
+    background-color: var(--main-color);
+}
+
+.about-appoint-two {
+    background-color: gray;
+    transform: translateY(-2rem);
+}
+
+section{
+    position: relative;
+}
+.man {
+    position: absolute;
+    right: 15rem;
+    width: 500px;
+}
+
+.woman {
+    position: absolute;
+    right: 1rem;
+    bottom: -50px;
+    width: 300px;
+    border: 5px solid rgb(221, 221, 221);
+}
+
+/* End About */
+
+/* Start Department */
+
+.dep-sec {
+    background-color: rgb(244, 244, 254);
+}
+
+.dep {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 80px;
+}
+
+.last-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    gap: 5px;
+}
+
+.cardio {
+    background-color: white;
+    padding: 25px 30px;
+    font-size: 20px;
+}
+
+.cardio span {
+    color: var(--main-color);
+}
+
+/* End Department */
+
+
+@media (max-width: 767px) {
+    section {
+        width: 767px;
+    }
+    .number {
+        display: none;
+    }
+    .man {
+        position: relative;
+        transform: translateX(10rem);
+        right: 5rem;
+    }
+    .woman {
+        position: relative;
+        /* margin: 0 auto; */
+        width: 500px;
+        transform: translateX(5rem);
+    }
+    .dep-sec {
+        width: 767px;
+    }
+    .last-sec {
+        flex-direction: column;
+    }
+    .about-sec .container {
+        text-align: center;
+    }
+}
